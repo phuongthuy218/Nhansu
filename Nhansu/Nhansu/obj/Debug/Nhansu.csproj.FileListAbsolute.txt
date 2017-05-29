@@ -1,0 +1,50 @@
+c:\users\viettel\documents\visual studio 2015\Projects\Nhansu\Nhansu\bin\Debug\Nhansu.exe.config
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\bin\Debug\Nhansu.exe
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\bin\Debug\Nhansu.pdb
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Danhsachnvdt.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Daotao.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Dieuchuyencongtac.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Trangchu.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Chucvu.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Hopdong.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Khenthuong.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Kyluat.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Luong.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Nhanvien.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Phongban.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Thannhan.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Trinhdo.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Ungvien.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Properties.Resources.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.csproj.GenerateResource.Cache
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.exe
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.pdb
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.csprojResolveAssemblyReference.cache
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Login.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Quanlynguoidung.resources
+C:\Users\VIETTEL\Documents\Visual Studio 2015\Projects\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.huongdan.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\bin\Debug\Nhansu.exe.config
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.exe
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.pdb
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\bin\Debug\Nhansu.exe
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\bin\Debug\Nhansu.pdb
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.csprojResolveAssemblyReference.cache
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Danhsachnvdt.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Daotao.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Dieuchuyencongtac.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.huongdan.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Login.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Quanlynguoidung.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Trangchu.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Chucvu.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Hopdong.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Khenthuong.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Kyluat.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Luong.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Nhanvien.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Phongban.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Thannhan.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Trinhdo.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Gui.Ungvien.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.Properties.Resources.resources
+C:\Users\VIETTEL\Documents\GitHub\Quanlynhansu\Nhansu\Nhansu\obj\Debug\Nhansu.csproj.GenerateResource.Cache
