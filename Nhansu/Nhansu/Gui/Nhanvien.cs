@@ -151,9 +151,8 @@ namespace Nhansu.Gui
             nhanvien nv = new nhanvien();
             nv.manv = txtmanv.Text;
             nv.mapb = cbbmapb.SelectedValue.ToString();
-            nv.macv = cbbmacvu.Text;
-            nv.ngayvaolam = datengayvaolam.Value;
-            
+            nv.macv = cbbmacvu.SelectedValue.ToString();
+            nv.ngayvaolam = datengayvaolam.Value;           
             uv.mauv = cbbmauv.Text;
 
             if (MessageBox.Show(string.Format("Thêm nhân viên"), "", MessageBoxButtons.OKCancel) == DialogResult.OK)
@@ -162,6 +161,7 @@ namespace Nhansu.Gui
                 {
                     MessageBox.Show("Đã Thêm thành công!Mời bạn chuyển đến để thêm hợp đồng cho nhân viên này:))");
                     Nhanvien_Load(sender, e);
+
                     Hopdong hd = new Hopdong();
                     hd.Show();
                 }
@@ -258,10 +258,10 @@ namespace Nhansu.Gui
             }
         }
 
-        private void tstxttimkiem_Click(object sender, EventArgs e)
-        {
-            tstxttimkiem.Text = string.Empty;
-        }
+        //private void tstxttimkiem_Click(object sender, EventArgs e)
+        //{
+        //    tstxttimkiem.Text = string.Empty;
+        //}
 
         private void cbbtinhnq_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -318,26 +318,41 @@ namespace Nhansu.Gui
                 cbbxans.Items.Add("Cầu giy");
             }
         }
-
+        
+        
+        public void comboopb ()
+        {
+            cbbmapb.DisplayMember = "tenpb";
+            cbbmapb.ValueMember = "mapb";
+            cbbmapb.DataSource = Bus.Getlistphongban();
+        }
+        public void combocv()
+        {
+            cbbmacvu.DisplayMember = "tencv";
+            cbbmacvu.ValueMember = "macv";
+            cbbmacvu.DataSource = Bus.Getlistchucvu();
+        }
         private void txtmauv_TextChanged(object sender, EventArgs e)
         {
 
         }
         public void hienthipb(string mapb)
         {
+            comboopb();
             dgvnhanvien.DataSource = Bus.timkiemtheopb(mapb);
         }
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            hienthipb(" where mapb like N'%" + cbbmapb.Text+ "%'");
+            hienthipb(" where mapb like N'%" + cbbmapb.SelectedValue.ToString()+ "%'");
         }
         public void hienthicv(string macv)
         {
+            combocv();
             dgvnhanvien.DataSource = Bus.timkiemtheocv(macv);
         }
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            hienthicv(" where macv like N'%" + cbbmacvu.Text + "%'");
+            hienthicv(" where macv like N'%" + cbbmacvu.SelectedValue.ToString() + "%'");
         }
     }
 

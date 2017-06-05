@@ -18,7 +18,7 @@ namespace Nhansu.Gui
         private SqlDataAdapter da = new SqlDataAdapter();
         private void connect()
         {
-            string sql = @"Server=DESKTOP-7HJFAVT\SQLEXPRESSTT;Database=Nhansu;Integrated Security=True";
+            string sql = @"Data Source=ADMINS\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
             try
             {
                 conn = new SqlConnection(sql);

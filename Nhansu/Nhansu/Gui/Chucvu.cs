@@ -32,8 +32,8 @@ namespace Nhansu.Gui
 
         private void dgvchucvu_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtmacv.Text = dgvchucvu.CurrentRow.Cells["macvu"].Value.ToString();
-            txttencv.Text = dgvchucvu.CurrentRow.Cells["tencvu"].Value.ToString();
+            txtmacv.Text = dgvchucvu.CurrentRow.Cells["macv"].Value.ToString();
+            txttencv.Text = dgvchucvu.CurrentRow.Cells["tencv"].Value.ToString();
             txtphucap.Text = dgvchucvu.CurrentRow.Cells["phucapcv"].Value.ToString();
             txthesoluong.Text = dgvchucvu.CurrentRow.Cells["hesoluong"].Value.ToString();
             txtluongcoban.Text = dgvchucvu.CurrentRow.Cells["luongcoban"].Value.ToString();
@@ -81,7 +81,7 @@ namespace Nhansu.Gui
             }
             chucvu cv = new chucvu();
             cv.macv = txtmacv.Text;
-            cv.tencv = txtmacv.Text;
+            cv.tencv = txttencv.Text;
             cv.phucapcv = txtphucap.Text;
             cv.hesoluong = txthesoluong.Text;
             cv.luongcoban = txtluongcoban.Text;

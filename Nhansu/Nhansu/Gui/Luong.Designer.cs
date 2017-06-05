@@ -75,6 +75,8 @@
             this.tienbaohiemyte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tienbaohiemxahoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tongluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.butsangkhenthuong = new System.Windows.Forms.Button();
+            this.butkyluat = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.grbhienthi.SuspendLayout();
@@ -253,6 +255,8 @@
             // 
             this.grbhienthi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.grbhienthi.BackgroundImage = global::Nhansu.Properties.Resources.afsadfdafdfaf;
+            this.grbhienthi.Controls.Add(this.butkyluat);
+            this.grbhienthi.Controls.Add(this.butsangkhenthuong);
             this.grbhienthi.Controls.Add(this.btnchon);
             this.grbhienthi.Controls.Add(this.button1);
             this.grbhienthi.Controls.Add(this.cbbmacv);
@@ -276,7 +280,7 @@
             this.grbhienthi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbhienthi.Location = new System.Drawing.Point(9, 188);
             this.grbhienthi.Name = "grbhienthi";
-            this.grbhienthi.Size = new System.Drawing.Size(349, 284);
+            this.grbhienthi.Size = new System.Drawing.Size(349, 304);
             this.grbhienthi.TabIndex = 36;
             this.grbhienthi.TabStop = false;
             this.grbhienthi.Text = "Thông tin lương";
@@ -427,7 +431,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(364, 69);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(360, 403);
+            this.groupBox1.Size = new System.Drawing.Size(360, 423);
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hiển Thị Lương";
@@ -450,7 +454,7 @@
             this.tongluong});
             this.dgvluong.Location = new System.Drawing.Point(6, 20);
             this.dgvluong.Name = "dgvluong";
-            this.dgvluong.Size = new System.Drawing.Size(348, 377);
+            this.dgvluong.Size = new System.Drawing.Size(348, 390);
             this.dgvluong.TabIndex = 12;
             this.dgvluong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvluong_CellContentClick);
             // 
@@ -520,12 +524,32 @@
             this.tongluong.HeaderText = "Tổng lương";
             this.tongluong.Name = "tongluong";
             // 
+            // butsangkhenthuong
+            // 
+            this.butsangkhenthuong.Location = new System.Drawing.Point(87, 268);
+            this.butsangkhenthuong.Name = "butsangkhenthuong";
+            this.butsangkhenthuong.Size = new System.Drawing.Size(106, 23);
+            this.butsangkhenthuong.TabIndex = 39;
+            this.butsangkhenthuong.Text = "Khen thưởng";
+            this.butsangkhenthuong.UseVisualStyleBackColor = true;
+            this.butsangkhenthuong.Click += new System.EventHandler(this.butsangkhenthuong_Click);
+            // 
+            // butkyluat
+            // 
+            this.butkyluat.Location = new System.Drawing.Point(213, 268);
+            this.butkyluat.Name = "butkyluat";
+            this.butkyluat.Size = new System.Drawing.Size(102, 23);
+            this.butkyluat.TabIndex = 40;
+            this.butkyluat.Text = "Kỷ luật";
+            this.butkyluat.UseVisualStyleBackColor = true;
+            this.butkyluat.Click += new System.EventHandler(this.butkyluat_Click);
+            // 
             // Luong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Nhansu.Properties.Resources.chechunag;
-            this.ClientSize = new System.Drawing.Size(725, 498);
+            this.ClientSize = new System.Drawing.Size(725, 487);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grbhienthi);
             this.Controls.Add(this.groupBox1);
@@ -595,5 +619,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tienbaohiemyte;
         private System.Windows.Forms.DataGridViewTextBoxColumn tienbaohiemxahoi;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongluong;
+        private System.Windows.Forms.Button butkyluat;
+        private System.Windows.Forms.Button butsangkhenthuong;
     }
 }

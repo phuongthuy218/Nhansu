@@ -32,7 +32,6 @@
             this.cbbtinhdc = new System.Windows.Forms.ComboBox();
             this.cbbhuyendc = new System.Windows.Forms.ComboBox();
             this.cbbxadc = new System.Windows.Forms.ComboBox();
-            this.txtquanhe = new System.Windows.Forms.TextBox();
             this.labquanhe = new System.Windows.Forms.Label();
             this.datengaysinh = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,6 +57,7 @@
             this.tsbthem = new System.Windows.Forms.ToolStripButton();
             this.tsbxoa = new System.Windows.Forms.ToolStripButton();
             this.tsbluu = new System.Windows.Forms.ToolStripButton();
+            this.cbbquanhe = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.grbthannhan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvthannhan)).BeginInit();
@@ -68,10 +68,10 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.groupBox1.BackgroundImage = global::Nhansu.Properties.Resources.afsadfdafdfaf;
+            this.groupBox1.Controls.Add(this.cbbquanhe);
             this.groupBox1.Controls.Add(this.cbbtinhdc);
             this.groupBox1.Controls.Add(this.cbbhuyendc);
             this.groupBox1.Controls.Add(this.cbbxadc);
-            this.groupBox1.Controls.Add(this.txtquanhe);
             this.groupBox1.Controls.Add(this.labquanhe);
             this.groupBox1.Controls.Add(this.datengaysinh);
             this.groupBox1.Controls.Add(this.label3);
@@ -178,13 +178,6 @@
             this.cbbxadc.Name = "cbbxadc";
             this.cbbxadc.Size = new System.Drawing.Size(115, 24);
             this.cbbxadc.TabIndex = 22;
-            // 
-            // txtquanhe
-            // 
-            this.txtquanhe.Location = new System.Drawing.Point(368, 21);
-            this.txtquanhe.Name = "txtquanhe";
-            this.txtquanhe.Size = new System.Drawing.Size(140, 22);
-            this.txtquanhe.TabIndex = 13;
             // 
             // labquanhe
             // 
@@ -419,6 +412,24 @@
             this.tsbluu.Text = "Save";
             this.tsbluu.Click += new System.EventHandler(this.tsbluu_Click);
             // 
+            // cbbquanhe
+            // 
+            this.cbbquanhe.FormattingEnabled = true;
+            this.cbbquanhe.Items.AddRange(new object[] {
+            "Mẹ",
+            "Bố",
+            "Anh(em) trai",
+            "Chị(em) gái",
+            "Dì",
+            "Bác",
+            "Cô",
+            "CHú",
+            "Bác"});
+            this.cbbquanhe.Location = new System.Drawing.Point(368, 19);
+            this.cbbquanhe.Name = "cbbquanhe";
+            this.cbbquanhe.Size = new System.Drawing.Size(130, 24);
+            this.cbbquanhe.TabIndex = 25;
+            // 
             // Thannhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -460,7 +471,6 @@
         private System.Windows.Forms.ToolStripButton tsbthem;
         private System.Windows.Forms.ToolStripButton tsbxoa;
         private System.Windows.Forms.ToolStripButton tsbluu;
-        private System.Windows.Forms.TextBox txtquanhe;
         private System.Windows.Forms.Label labquanhe;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
@@ -474,5 +484,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn diachi;
         private System.Windows.Forms.DataGridViewTextBoxColumn manv;
         private System.Windows.Forms.DataGridViewTextBoxColumn quanhe;
+        private System.Windows.Forms.ComboBox cbbquanhe;
     }
 }

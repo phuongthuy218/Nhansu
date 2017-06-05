@@ -1,6 +1,6 @@
 ﻿--                           Login
 --thêm
-alter proc themnd @tendangnhap nvarchar(50) ,@matkhau nvarchar(50)
+create proc themnd @tendangnhap nvarchar(50) ,@matkhau nvarchar(50)
 as
 begin
 insert into nguoidung(tendangnhap,matkhau)
@@ -34,7 +34,7 @@ values (@macv,@tencv,@hesoluong,@luongcoban,@phucapcv)
 end
 --                             DANH SÁCH NV ĐÀO TẠO 
 --them
-alter proc themnvdt  @madt char(10),@tendt nvarchar(50),@manv char(10),@tennv nvarchar(50)
+create proc themnvdt  @madt char(10),@tendt nvarchar(50),@manv char(10),@tennv nvarchar(50)
 as
 begin
  insert into nhanviendaotao(madt,tendt,manv,tennv)
@@ -53,7 +53,7 @@ end
 xemnvdt 'dt01'
                           --ĐÀO TẠO
 --thêm 
-alter proc themdt @madt char(10),@tendt nvarchar(50),@tungay datetime,@denngay datetime,@diachi nvarchar(50),@soluongnv int,@ghichu nvarchar(50)
+create proc themdt @madt char(10),@tendt nvarchar(50),@tungay datetime,@denngay datetime,@diachi nvarchar(50),@soluongnv int,@ghichu nvarchar(50)
 as
 begin 
 insert into daotao(madt,tendt,tungay,denngay,diachi,soluongnv,ghichu)
@@ -64,7 +64,7 @@ themdt 'dt06','t','2017/03/07','2017/09/09','ư','2','k'
 
                             --ĐIỀU CHUYỂN CÔNG TÁC
 --thêm 
-alter proc themdcct @manv char(10),@tennv nvarchar(50),@mapbcu char(10),@mapbmoi char(10),@macvcu char(10),@macvmoi char(10),@tungay datetime ,@lydo nvarchar(50),@ghichu nvarchar(50)
+create proc themdcct @manv char(10),@tennv nvarchar(50),@mapbcu char(10),@mapbmoi char(10),@macvcu char(10),@macvmoi char(10),@tungay datetime ,@lydo nvarchar(50),@ghichu nvarchar(50)
 as
 begin
 insert into dieuchuyencongtac(manv,tennv,mapbcu,mapbmoi,macvcu,macvmoi,tungay,lydo,ghichu)
@@ -78,7 +78,7 @@ themdcct'nv02',N'Nguyễn Thị Thảo','pb06','pb06','cv10','cv06','2016/09/12'
 themdcct 'nv05',N'Lê Thế Trung','pb04','null','cv04','cv04','2017/04/06',N'hh',N'g'
 
 --sửa
-alter proc suadcct @tungay datetime ,@lydo nvarchar(50),@ghichu nvarchar(50)
+create proc suadcct @tungay datetime ,@lydo nvarchar(50),@ghichu nvarchar(50)
 as
 begin
 update dieuchuyencongtac
@@ -95,7 +95,7 @@ where mapbcu=@mapbcu and tungay=@tungay
 end
                                --HỢP ĐỒNG
 --thêm
-alter proc themhd @mahd char(10),@loaihd nvarchar(50),@manv char(10),@tungay datetime,@denngay datetime,@ngaykikethd datetime
+create proc themhd @mahd char(10),@loaihd nvarchar(50),@manv char(10),@tungay datetime,@denngay datetime,@ngaykikethd datetime
 as
 begin
 insert into hopdong(mahd,loaihd,manv,tungay,denngay,ngaykikethd)
@@ -103,7 +103,7 @@ values (@mahd,@loaihd,@manv,@tungay,@denngay,@ngaykikethd)
 end
 themhd'hd06','HD 5 năm','nv04','2013/09/25','2018/09/25','2013/09/20'
 --sửa 
-alter proc suahd @mahd char(10),@loaihd nvarchar(50),@manv char(10),@tungay datetime,@denngay datetime,@ngaykikethd datetime
+create proc suahd @mahd char(10),@loaihd nvarchar(50),@manv char(10),@tungay datetime,@denngay datetime,@ngaykikethd datetime
 as
 begin
 update hopdong set loaihd=@loaihd,tungay=@tungay,denngay=@denngay,ngaykikethd=@ngaykikethd
@@ -117,49 +117,49 @@ delete hopdong where mahd =@mahd
 end
                                --KHEN THƯỞNG
 --thêm
-alter proc themkt @manv char(10),@ngaykt datetime,@hinhthuc nvarchar(50),@lydo nvarchar(50)
+create proc themkt @manv char(10),@ngaykt datetime,@hinhthuc nvarchar(50),@lydo nvarchar(50)
 as
 begin
 insert into khenthuong(manv,ngaykt,hinhthuc,lydo)
 values (@manv,@ngaykt,@hinhthuc,@lydo)
 end
 --sửa
-alter proc suakt @manv char(10),@ngaykt datetime,@hinhthuc nvarchar(50),@lydo nvarchar(50)
+create proc suakt @manv char(10),@ngaykt datetime,@hinhthuc nvarchar(50),@lydo nvarchar(50)
 as
 begin
 update khenthuong set hinhthuc=@hinhthuc,lydo=@lydo,ngaykt=@ngaykt
 where manv=@manv
 end
 --xóa
-alter proc xoakt @manv char(10)
+create proc xoakt @manv char(10)
 as
 begin
 delete khenthuong where manv=@manv
 end
                                  --KỶ LUẬT
 --thêm
-alter proc themkl @manv char(10),@ngaykl datetime,@hinhthuc nvarchar(50),@lydo nvarchar(50)
+create proc themkl @manv char(10),@ngaykl datetime,@hinhthuc nvarchar(50),@lydo nvarchar(50)
 as
 begin
 insert into kyluat(manv,ngaykl,hinhthuc,lydo)
 values (@manv,@ngaykl,@hinhthuc,@lydo)
 end
 --sửa
-alter proc suakl @manv char(10),@ngaykl datetime,@hinhthuc nvarchar(50),@lydo nvarchar(50)
+create proc suakl @manv char(10),@ngaykl datetime,@hinhthuc nvarchar(50),@lydo nvarchar(50)
 as
 begin
 update kyluat set hinhthuc=@hinhthuc,lydo=@lydo,ngaykl=@ngaykl
 where manv=@manv
 end
 --xóa
-alter proc xoakl @manv char(10)
+create proc xoakl @manv char(10)
 as
 begin
 delete kyluat where manv=@manv
 end
                             --LƯƠNG
 --thêm
-alter proc themluong @manv char(10),@tennv nvarchar(50),@macv char(10),@luongcoban int,@hesoluong float,@phucapcv int,@tienthuong int,@tienphat int,@tienbaohiemyte int,@tienbaohiemxahoi int,@tongluong int
+create proc themluong @manv char(10),@tennv nvarchar(50),@macv char(10),@luongcoban int,@hesoluong float,@phucapcv int,@tienthuong int,@tienphat int,@tienbaohiemyte int,@tienbaohiemxahoi int,@tongluong int
 as
 begin
 insert into luong(manv,tennv,macv,luongcoban,hesoluong,phucapcv,tienthuong,tienphat,tienbaohiemyte,tienbaohiemxahoi,tongluong)
@@ -167,7 +167,7 @@ values (@manv,@tennv,@macv,@luongcoban,@hesoluong,@phucapcv,@tienthuong,@tienpha
 end
 themluong 'nv01',null,'cv01',null,null,null,null,null,null,null,null
 --sửa
-alter proc sualuong @manv char(10),@tennv nvarchar(50),@macv char(10),@luongcoban int,@hesoluong float,@phucapcv int,@tienthuong int,@tienphat int,@tienbaohiemyte int,@tienbaohiemxahoi int,@tongluong int
+create proc sualuong @manv char(10),@tennv nvarchar(50),@macv char(10),@luongcoban int,@hesoluong float,@phucapcv int,@tienthuong int,@tienphat int,@tienbaohiemyte int,@tienbaohiemxahoi int,@tongluong int
 as
 begin
 update luong set tienthuong=@tienthuong,tienphat=@tienphat,tongluong=@tongluong
@@ -182,7 +182,7 @@ delete luong where manv=@manv
 end
                              --NHÂN VIÊN
 --thêm
-alter proc themnv @manv char(10),@mauv char(10),@mapb char(10),@macv char(10),@ngayvaolam datetime
+create proc themnv @manv char(10),@mauv char(10),@mapb char(10),@macv char(10),@ngayvaolam datetime
 as
 begin
 declare @tennv nvarchar(50),@ngaysinh datetime,@noisinh nvarchar(50),@nguyenquan nvarchar(50),@diachitamtru nvarchar(50),@gioitinh nvarchar(50),@dantoc nvarchar(50),@sodtnv int,@nguoilienhe nvarchar(50),@quoctich nvarchar(50),@ngoaingu nvarchar(50),@soCMND int,@soBHYT int,@soBHXH int,@matd char(10)
@@ -194,14 +194,14 @@ end
 drop proc themnv
 themnv 'nv09','uv01','pb04','cv05','2017/05/31'
 --sửa
-alter proc suanv @manv char(10),@tennv nvarchar(50),@mapb char(10),@macv char(10),@ngaysinh datetime,@noisinh nvarchar(50),@nguyenquan nvarchar(50),@diachitamtru nvarchar(50),@gioitinh nvarchar(50),@dantoc nvarchar(50),@sodtnv int,@nguoilienhe nvarchar(50),@quoctich nvarchar(50),@ngoaingu nvarchar(50),@ngayvaolam datetime,@soCMND int,@soBHYT int,@soBHXH int,@matd char(10)
+create proc suanv @manv char(10),@tennv nvarchar(50),@mapb char(10),@macv char(10),@ngaysinh datetime,@noisinh nvarchar(50),@nguyenquan nvarchar(50),@diachitamtru nvarchar(50),@gioitinh nvarchar(50),@dantoc nvarchar(50),@sodtnv int,@nguoilienhe nvarchar(50),@quoctich nvarchar(50),@ngoaingu nvarchar(50),@ngayvaolam datetime,@soCMND int,@soBHYT int,@soBHXH int,@matd char(10)
 as
 begin 
 update nhanvien set nguoilienhe=@nguoilienhe,sodtnv=@sodtnv
 where manv=@manv
 end
 --xóa
-alter proc xoanv @manv char(10)
+create proc xoanv @manv char(10)
 as
 begin
 if not exists(select manv from nhanvien where manv=@manv)
@@ -243,7 +243,7 @@ delete phongban where mapb=@mapb
 end 
                                --THÂN NHÂN 
 --thêm
-alter proc themtn @tentn nvarchar(50),@ngaysinh datetime,@diachi nvarchar(50),@manv char(10),@quanhe nvarchar(50)
+create proc themtn @tentn nvarchar(50),@ngaysinh datetime,@diachi nvarchar(50),@manv char(10),@quanhe nvarchar(50)
 as
 begin
 insert into thannhan(tentn,ngaysinh,diachi,manv,quanhe)
@@ -258,7 +258,7 @@ delete thannhan where manv=@manv
 end
                                   --ỨNG VIÊN
 --thêm 
-alter proc themuv @mauv char(10),@tenuv nvarchar(50),@ngaysinh datetime,@noisinh nvarchar(50),@nguyenquan nvarchar(50),@diachitamtru nvarchar(50),@gioitinh nvarchar(50),@dantoc nvarchar(50),@sodtuv int,@nguoilienhe nvarchar(50),@quoctich nvarchar(50),@ngoaingu nvarchar(50),@soCMND int,@soBHYT int,@soBHXH int,@matd char(10)
+create proc themuv @mauv char(10),@tenuv nvarchar(50),@ngaysinh datetime,@noisinh nvarchar(50),@nguyenquan nvarchar(50),@diachitamtru nvarchar(50),@gioitinh nvarchar(50),@dantoc nvarchar(50),@sodtuv int,@nguoilienhe nvarchar(50),@quoctich nvarchar(50),@ngoaingu nvarchar(50),@soCMND int,@soBHYT int,@soBHXH int,@matd char(10)
 as
 begin
 insert into ungvien(mauv,tenuv,ngaysinh,noisinh,nguyenquan,diachitamtru,gioitinh,dantoc,sodtuv,nguoilienhe,quoctich,ngoaingu,soCMND,soBHYT,soBHXH,matd)
@@ -266,7 +266,7 @@ values (@mauv,@tenuv,@ngaysinh,@noisinh,@nguyenquan,@diachitamtru,@gioitinh,@dan
 end
 themuv'uv01','t','1990/02/03','a,b,n','a,b,c','r,p,o','nữ','f','36','w','r','k','3','7','8','td02'
 --sửa
-alter proc suauv @mauv char(10),@tenuv nvarchar(50),@ngaysinh datetime,@noisinh nvarchar(50),@nguyenquan nvarchar(50),@diachitamtru nvarchar(50),@gioitinh nvarchar(50),@dantoc nvarchar(50),@sodtuv int,@nguoilienhe nvarchar(50),@quoctich nvarchar(50),@ngoaingu nvarchar(50),@soCMND int,@soBHYT int,@soBHXH int,@matd char(50)
+create proc suauv @mauv char(10),@tenuv nvarchar(50),@ngaysinh datetime,@noisinh nvarchar(50),@nguyenquan nvarchar(50),@diachitamtru nvarchar(50),@gioitinh nvarchar(50),@dantoc nvarchar(50),@sodtuv int,@nguoilienhe nvarchar(50),@quoctich nvarchar(50),@ngoaingu nvarchar(50),@soCMND int,@soBHYT int,@soBHXH int,@matd char(50)
 as
 begin
 update ungvien set sodtuv =@sodtuv,nguoilienhe=@nguoilienhe

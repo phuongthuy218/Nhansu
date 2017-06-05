@@ -22,7 +22,7 @@ namespace Nhansu.Gui
         }
         public SqlConnection getconnect()
         {
-            return new SqlConnection(@"Server=DESKTOP-7HJFAVT\SQLEXPRESSTT;Database=Nhansu;Integrated Security=True");
+            return new SqlConnection(@"Data Source=ADMINS\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True");
         }
         private void Kyluat_Load(object sender, EventArgs e)
         {

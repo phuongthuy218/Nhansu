@@ -23,7 +23,7 @@ namespace Nhansu.Gui
      
         public SqlConnection getconnect()
         {
-            return new SqlConnection(@"Server=DESKTOP-7HJFAVT\SQLEXPRESSTT;Database=Nhansu;Integrated Security=True");
+            return new SqlConnection( @"Data Source=ADMINS\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True");
         }
         private void Hopdong_Load(object sender, EventArgs e)
         {
@@ -42,10 +42,10 @@ namespace Nhansu.Gui
         {
             txtmahd.Text = dgvhopdong.CurrentRow.Cells["mahd"].Value.ToString();
             txtloaihd.Text = dgvhopdong.CurrentRow.Cells["loaihd"].Value.ToString();
-            cbbmanv.Text = dgvhopdong.CurrentRow.Cells["manv"].Value.ToString();
-           
+            cbbmanv.Text = dgvhopdong.CurrentRow.Cells["manv"].Value.ToString();          
             datetungay.Text = dgvhopdong.CurrentRow.Cells["tungay"].Value.ToString();
             datedenngay.Text = dgvhopdong.CurrentRow.Cells["denngay"].Value.ToString();
+            datengaykikethd.Text = dgvhopdong.CurrentRow.Cells["ngaykikethd"].Value.ToString();
         }
 
         //private void cbbmanv_SelectedIndexChanged(object sender, EventArgs e)
@@ -57,8 +57,7 @@ namespace Nhansu.Gui
         {
             txtmahd.Text = string.Empty;
             txtloaihd.Text = string.Empty;
-            cbbmanv.Text = string.Empty;
-          
+            cbbmanv.Text = string.Empty;    
             datetungay.Value = DateTime.Now;
             datedenngay.Value = DateTime.Now;
             datengaykikethd.Value = DateTime.Now;
@@ -74,8 +73,7 @@ namespace Nhansu.Gui
             hopdong hd = new hopdong();
             hd.mahd = txtmahd.Text;
             hd.loaihd = txtloaihd.Text;
-            hd.manv = cbbmanv.SelectedValue.ToString();
-           
+            hd.manv = cbbmanv.SelectedValue.ToString();           
             hd.tungay = datetungay.Value;
             hd.denngay = datedenngay.Value;
             hd.ngaykikethd = datengaykikethd.Value;
@@ -125,8 +123,7 @@ namespace Nhansu.Gui
             hopdong hd = new hopdong();
             hd.mahd = txtmahd.Text;
             hd.loaihd = txtloaihd.Text;
-            hd.manv = cbbmanv.SelectedValue.ToString();
-           
+            hd.manv = cbbmanv.SelectedValue.ToString();     
             hd.tungay = datetungay.Value;
             hd.denngay = datedenngay.Value;
             hd.ngaykikethd = datengaykikethd.Value;

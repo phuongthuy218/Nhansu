@@ -192,7 +192,7 @@
             // 
             this.tstxttimkiem.Name = "tstxttimkiem";
             this.tstxttimkiem.Size = new System.Drawing.Size(150, 41);
-            this.tstxttimkiem.Click += new System.EventHandler(this.tstxttimkiem_Click);
+  //          this.tstxttimkiem.Click += new System.EventHandler(this.tstxttimkiem_Click);
             // 
             // tbs_search
             // 

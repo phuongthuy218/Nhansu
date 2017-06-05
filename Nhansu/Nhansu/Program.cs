@@ -17,7 +17,7 @@ namespace Nhansu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dieuchuyencongtac());
+            Application.Run(new Login());
         }
     }
 }

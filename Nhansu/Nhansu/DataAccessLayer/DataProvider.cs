@@ -16,7 +16,7 @@ namespace Nhansu.DataAccessLayer
             {
                 try
                 {
-                    string sql = @"Server=DESKTOP-7HJFAVT\SQLEXPRESSTT;Database=Nhansu;Integrated Security=True";
+                    string sql = @"Data Source=ADMINS\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
                     SqlConnection conn = new SqlConnection(sql);
                     conn.Open();
                     return conn;

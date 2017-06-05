@@ -22,7 +22,7 @@ namespace Nhansu.Gui
         }
         public SqlConnection getconnect()
         {
-            return new SqlConnection(@"Server=DESKTOP-7HJFAVT\SQLEXPRESSTT;Database=Nhansu;Integrated Security=True");
+            return new SqlConnection( @"Data Source=ADMINS\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True");
         }
         private void Thannhan_Load(object sender, EventArgs e)
         {
@@ -47,7 +47,7 @@ namespace Nhansu.Gui
             cbbhuyendc.Text =dctt[1];
             cbbxadc.Text = dctt[2];
             cbbmanv.Text = dgvthannhan.CurrentRow.Cells["manv"].Value.ToString();
-            txtquanhe.Text = dgvthannhan.CurrentRow.Cells["quanhe"].Value.ToString();
+            cbbquanhe.Text = dgvthannhan.CurrentRow.Cells["quanhe"].Value.ToString();
         }
 
         private void tsbthem_Click(object sender, EventArgs e)
@@ -58,7 +58,7 @@ namespace Nhansu.Gui
             cbbhuyendc.Text = string.Empty;
             cbbxadc.Text = string.Empty;
             cbbmanv.Text = string.Empty;     
-            txtquanhe.Text = string.Empty;
+            cbbquanhe.Text = string.Empty;
         }
 
         private void tsbluu_Click(object sender, EventArgs e)
@@ -74,7 +74,7 @@ namespace Nhansu.Gui
             tn.diachi = cbbtinhdc.Text + "," + cbbhuyendc.Text + "," + cbbxadc.Text;
             tn.manv = cbbmanv.Text;
       
-            tn.quanhe = txtquanhe.Text;
+            tn.quanhe = cbbquanhe.Text;
             if (MessageBox.Show(string.Format("Thêm thân nhân"), "", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 if (Bus.InsertProfile(tn) > 0)
@@ -99,7 +99,7 @@ namespace Nhansu.Gui
             tn.diachi = cbbtinhdc.Text + "," + cbbhuyendc.Text + "," + cbbxadc.Text;
             tn.manv = cbbmanv.Text;
         
-            tn.quanhe = txtquanhe.Text;
+            tn.quanhe = cbbquanhe.Text;
             if (MessageBox.Show(string.Format("Xóa thân nhân"), "", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 if (Bus.DeleteProfile(tn) > 0)

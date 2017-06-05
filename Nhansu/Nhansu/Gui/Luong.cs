@@ -160,8 +160,7 @@ namespace Nhansu.Gui
             luong l = new luong();
             l.manv = cbbmanv.Text;
             l.tennv = txttennv.Text;
-            l.macv = cbbmacv.Text;
-          
+            l.macv = cbbmacv.Text;       
             l.hesoluong = int.Parse(txthesoluong.Text.ToString());
             l.phucapcv = int.Parse(txtphucapcv.Text.ToString());
             l.luongcoban = int.Parse(txtluongcoban.Text.ToString());
@@ -235,6 +234,18 @@ namespace Nhansu.Gui
             txtphucapcv.Text= DataAccessLayer.DataProvider.GetValues("select phucapcv from chucvu where macv='" + cbbmacv.Text + "'");
             txttennv.Text = DataAccessLayer.DataProvider.GetValues("select tennv from nhanvien where manv='" + cbbmanv.Text + "'");
             txtluongcoban.Text = DataAccessLayer.DataProvider.GetValues("select luongcoban from chucvu where macv ='" + cbbmacv.Text + "'");
+        }
+
+        private void butsangkhenthuong_Click(object sender, EventArgs e)
+        {
+            Khenthuong kt = new Khenthuong();
+            kt.Show();
+        }
+
+        private void butkyluat_Click(object sender, EventArgs e)
+        {
+            Kyluat kl = new Kyluat();
+            kl.Show();
         }
 
         //private void cbbmacv_SelectedIndexChanged(object sender, EventArgs e)

@@ -21,9 +21,10 @@ namespace Nhansu.Gui
         }
         public void commo()
         {
+            cbbmatd.DisplayMember = "tentd";
+            cbbmatd.ValueMember = "matd";
             cbbmatd.DataSource = Bus.Getlisttrinhdo();
-            cbbmatd.DisplayMember = "matd";
-            cbbmatd.ValueMember = "tentd";
+
         }
         private void Ungvien_Load(object sender, EventArgs e)
         {
@@ -111,7 +112,7 @@ namespace Nhansu.Gui
             uv.soCMND = txtsocmnd.Text;
             uv.soBHYT = txtsobhyt.Text;
             uv.soBHXH = txtsobhxh.Text;
-            uv.matd = cbbmatd.Text;
+            uv.matd = cbbmatd.SelectedValue.ToString();
 
 
             if (MessageBox.Show(string.Format("Sửa ứng viên"), "", MessageBoxButtons.OKCancel) == DialogResult.OK)
@@ -151,7 +152,7 @@ namespace Nhansu.Gui
             uv.soCMND = txtsocmnd.Text;
             uv.soBHYT = txtsobhyt.Text;
             uv.soBHXH = txtsobhxh.Text;
-            uv.matd = cbbmatd.Text;
+            uv.matd = cbbmatd.SelectedValue.ToString();
 
 
             if (MessageBox.Show(string.Format("Thêm ứng viên"), "", MessageBoxButtons.OKCancel) == DialogResult.OK)
@@ -189,7 +190,7 @@ namespace Nhansu.Gui
             uv.soCMND = txtsocmnd.Text;
             uv.soBHYT = txtsobhyt.Text;
             uv.soBHXH = txtsobhxh.Text;
-            uv.matd = cbbmatd.Text;
+            uv.matd = cbbmatd.SelectedValue.ToString();
 
 
             if (MessageBox.Show(string.Format("Xóa ứng viên"), "", MessageBoxButtons.OKCancel) == DialogResult.OK)

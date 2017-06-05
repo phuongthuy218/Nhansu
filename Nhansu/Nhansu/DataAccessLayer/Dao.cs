@@ -338,7 +338,7 @@ namespace Nhansu.DataAccessLayer
         public static int InsertProfile(nhanvien nv,ungvien uv)
         {
             SqlParameter[] para = new SqlParameter[]
-            {                new SqlParameter("@manv", nv.manv),
+            {    new SqlParameter("@manv", nv.manv),
                 new SqlParameter("@mauv", uv.mauv),
                 new SqlParameter("@mapb",nv.mapb),
                 new SqlParameter("@macv",nv.macv),

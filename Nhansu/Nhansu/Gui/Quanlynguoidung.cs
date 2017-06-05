@@ -113,7 +113,9 @@ namespace Nhansu.Gui
             {
                 Dispose();
             }
-            this.Close();
+            Trangchu tc = new Trangchu();
+            tc.Show();
+            this.Hide();
         }
 
        
